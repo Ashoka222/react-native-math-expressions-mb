@@ -1,0 +1,11 @@
+{
+  "name": "react-native-math-expressions-mb",
+  "version": "1.0.0",
+  "description": "react-native math expressions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ashok Kumbhar <ashokkumbhar222@gmail.com>",
+  "license": "ISC"
+}
