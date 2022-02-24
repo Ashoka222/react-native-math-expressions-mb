@@ -3,21 +3,21 @@ function addNumbers(...arg) {
   if (params.length === 0) {
     throw "Parameters are missing in addNumber function.";
   }
-  let onlyInt = params.filter((value, index) => {
+  let nonIntegers = params.filter((value, index) => {
     return /^\d+$/.test(value);
   });
-  if (onlyInt.length === 0) {
+  if (nonIntegers.length === 0) {
     if (params.length === 1) {
       let intValue = params[0].split(",");
       params = intValue;
-      let onlyInt = params.filter((value, index) => {
+      let nonIntegers = params.filter((value, index) => {
         return /^\d+$/.test(value);
       });
-      if (params.length !== onlyInt.length) {
-        throw "Only numbers are allowed in subNumbers function.";
+      if (params.length !== nonIntegers.length) {
+        throw "Only numbers are allowed in addNumber function.";
       }
     }
-  } else if (params.length !== onlyInt.length) {
+  } else if (params.length !== nonIntegers.length) {
     throw "Only numbers are allowed in addNumber function.";
   }
   return params.reduce((prevValue, currentValue) => {
